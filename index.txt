@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      position: relative;
+      width: 700px;
+      height: 600px;
+    }
+
+    .center-image {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      width: 300px;
+      height: 400px;
+      transform: translate(-50%, -50%);
+      border-radius: 0%;
+      object-fit: cover;
+            z-index: 2;
+    }
+
+    .small-image {
+      position: absolute;
+      width: 80px;
+      text-align: center;
+      font-size: 12px;
+z-index: 20; 
+    }
+
+    .small-image img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      
+    }
+
+    .small-image a {
+      display: block;
+      margin-top: -10px;
+      text-decoration: none;
+      color: #000000;
+    }
+.floating-title {
+  position: absolute;
+  z-index: 3;
+  font-family: Impact, "Arial Black", Arial, sans-serif;
+  color: black;
+}
+
+.floating-title2 {
+  position: absolute;
+  z-index: 3;
+   font-family: 'Great Vibes', cursive;
+  color: black;
+  writing-mode: vertical-lr; /* verticale tekst van onder naar boven */
+  text-orientation: mixed;
+transform: rotate(180deg);
+  transform-origin: center;
+}
+.floating-gray-bar {
+  position: absolute;
+  background-color: #ccc;
+  color: #000;
+  padding: 37px 300px;
+  border-radius: 8px;
+  text-align: center;
+  width: fit-content;
+  max-width: 80%;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <img src="img/me.png" alt="Center Image" class="center-image">
+<div class="floating-title" style="top: 18%; left: 65%;">
+  <h1>
+    Mijn<br>
+        portfolio
+  </h1>
+</div>
+<div class="floating-title2" style="top: 58%; left: 57%;">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <h4>
+    Indira Brouwer
+  </h4>
+</div>
+<div class="floating-gray-bar" style="top: 80%; left: 5%;">
+ </div>
+
+        <div class="small-image" style="top: 10%; left: -10%;">
+      <img src="img/cv.png" alt="1">
+      <a href="https://www.freecodecamp.org" target="_blank">Curriculum vitae</a>
+    </div>
+    <div class="small-image" style="top: 15%; left: 10%;">
+      <img src="img/feedback.png" alt="2">
+      <a href="https://www.freecodecamp.org" target="_blank">Feedback</a>
+    </div>
+    <div class="small-image" style="top: 35%; left: 17%;">
+      <img src="img/illustraties.png" alt="3">
+      <a href="https://www.freecodecamp.org" target="_blank">Illustraties</a>
+    </div>
+    <div class="small-image" style="top: 40%; left: 0%;">
+      <img src="img/kansen-en-bedreigingen.png" alt="4">
+      <a href="https://www.freecodecamp.org" target="_blank">Kansen en bedreigingen</a>
+    </div>
+    <div class="small-image" style="top: 60%; left: -5%;">
+      <img src="img/leeruitkomsten.png" alt="5">
+      <a href="https://www.freecodecamp.org" target="_blank">Leeruitkomsten</a>
+    </div>
+
+      <div class="small-image" style="top: 12%; left: 100%;">
+      <img src="img/reflectie.png" alt="6">
+      <a href="https://www.freecodecamp.org" target="_blank">Reflectie</a>
+    </div>
+    <div class="small-image" style="top: 35%; left: 80%;">
+      <img src="img/reizen.png" alt="7">
+      <a href="https://www.freecodecamp.org" target="_blank">Reizen</a>
+    </div>
+    <div class="small-image" style="top: 45%; left: 100%;">
+      <img src="img/stage.png" alt="8">
+      <a href="https://www.freecodecamp.org" target="_blank">Stage</a>
+    </div>
+   
+    <div class="small-image" style="top: 61%; left: 90%;">
+      <img src="img/wie.png" alt="10">
+      <a href="https://www.freecodecamp.org" target="_blank">Wie ben ik?</a>
+    </div>
+<div class="small-image" style="top: 53%; left: 70%;">
+      <img src="img/vaardigheden.png" alt="10">
+      <a href="https://www.freecodecamp.org" target="_blank">Duurzame vaardigheden</a>
+    </div>
+
+  <div class="small-image" style="top: 79.5%; left: 15%;">
+      <img src="img/nieuwe-map.png" alt="8">
+      <a href="https://www.freecodecamp.org" onclick
+="return false" target="_blank">Nieuwe map</a>
+    </div>
+    <div class="small-image" style="top: 79.5%; left: 79%;">
+      <img src="img/prullebak.png" alt="9">
+      <a href="https://www.freecodecamp.org" onclick="return false" target="_blank">Prullebak</a>
+    </div>
+    <div class="small-image" style="top: 78%; left: 40%;">
+      <img src="img/edge.png" alt="10">
+      <a href="https://www.freecodecamp.org" onclick="return false" target="_blank">Microsoft Edge</a>
+    </div>
+ <div class="small-image" style="top: 79.5%; left: 55%;">
+      <img src="img/certificaten.png" alt="9">
+      <a href="https://www.freecodecamp.org" target="_blank">Certificaten</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+ <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      position: relative;
+      width: 700px;
+      height: 600px;
+    }
+
+    .center-image {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      width: 300px;
+      height: 400px;
+      transform: translate(-50%, -50%);
+      border-radius: 0%;
+      object-fit: cover;
+            z-index: 2;
+    }
+
+    .small-image {
+      position: absolute;
+      width: 80px;
+      text-align: center;
+      font-size: 12px;
+z-index: 20; 
+    }
+
+    .small-image img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      
+    }
+
+    .small-image a {
+      display: block;
+      margin-top: -10px;
+      text-decoration: none;
+      color: #000000;
+    }
+.floating-title {
+  position: absolute;
+  z-index: 3;
+  font-family: Impact, "Arial Black", Arial, sans-serif;
+  color: black;
+}
+
+.floating-title2 {
+  position: absolute;
+  z-index: 3;
+   font-family: 'Great Vibes', cursive;
+  color: black;
+  writing-mode: vertical-lr; /* verticale tekst van onder naar boven */
+  text-orientation: mixed;
+transform: rotate(180deg);
+  transform-origin: center;
+}
+.floating-gray-bar {
+  position: absolute;
+  background-color: #ccc;
+  color: #000;
+  padding: 37px 300px;
+  border-radius: 8px;
+  text-align: center;
+  width: fit-content;
+  max-width: 80%;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+  </style>
